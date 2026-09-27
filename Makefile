@@ -2,7 +2,7 @@ ANTLR_JAR    = lib/antlr4-4.13.1-complete.jar
 BIN_DIR      = bin
 SRC_DIR      = src
 TEST_DIR     = tests
-RUNTIME_SRC  = $(SRC_DIR)/runtime/myruntime.c
+RUNTIME_SRC  = $(SRC_DIR)/runtime/myRuntime.c
 CLASSPATH    = .:$(ANTLR_JAR):$(BIN_DIR)
 
 GRAMMAR      = $(SRC_DIR)/myCompiler.g4
