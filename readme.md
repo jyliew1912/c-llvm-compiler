@@ -38,7 +38,7 @@ An ahead-of-time (AOT) and JIT-compatible compiler for an extended subset of the
   * Formatted output: `printf()` supporting `%d`, `%f` across arbitrary argument lengths.
   * Formatted input: `scanf()` supporting `%d`, `%f`.
 * **Custom Operator (`##`):**
-  * Evaluates $a \text{ \#\# } b = a^b + b^a$ on floating-point operands.
+  * Evaluates `a ## b` = $a^b + b^a$ on floating-point operands.
   * Shares operator precedence with multiplication (`*`) and division (`/`).
   * Backed by native runtime math functions in `myRuntime.c`.
 
@@ -77,8 +77,7 @@ An ahead-of-time (AOT) and JIT-compatible compiler for an extended subset of the
 ├── tests/
 │   ├── test1.c                  # End-to-end verification (I/O, control flow, `##` operator)
 │   ├── test2.c                  # Standard C test case for parity comparison with Clang IR
-│   ├── test3.c                  # Bonus features (type casting, nested loops, break/continue)
-│   └── expected/                # Golden LLVM IR references
+│   └── test3.c                  # Bonus features (type casting, nested loops, break/continue)  
 └── docs/
     └── language_spec.md         # Formal C-subset grammar and semantics specification
 ```
