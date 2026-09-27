@@ -1,5 +1,7 @@
 # C Subset to LLVM IR Compiler
 
+[![Build and Verify Compiler](https://github.com/jyliew1912/c-llvm-compiler/actions/workflows/ci.yml/badge.svg)](https://github.com/jyliew1912/c-llvm-compiler/actions/workflows/ci.yml)
+
 An ahead-of-time (AOT) and JIT-compatible compiler for an extended subset of the C programming language, emitting verifiable **LLVM Intermediate Representation (LLVM IR)**. Built with **ANTLR v4** for lexical and syntactic parsing, featuring custom semantic analysis, symbol table management, type coercion, and LLVM IR code emission implemented in **Java**.
 
 ---
@@ -79,7 +81,7 @@ An ahead-of-time (AOT) and JIT-compatible compiler for an extended subset of the
 │   ├── test2.c                  # Standard C test case for parity comparison with Clang IR
 │   └── test3.c                  # Bonus features (type casting, nested loops, break/continue)  
 └── docs/
-    └── language_spec.md         # Formal C-subset grammar and semantics specification
+    └── c_subset_description.md         # Formal C-subset grammar and semantics specification
 ```
 
 ---
