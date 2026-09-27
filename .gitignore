@@ -1,0 +1,25 @@
+cat << 'EOF' > .gitignore
+# Build outputs
+/bin/
+*.ll
+*.out
+*.exe
+test1_exec
+
+# ANTLR generated source files (reproducible from src/myCompiler.g4)
+src/myCompilerLexer.*
+src/myCompilerParser.*
+src/myCompilerListener.*
+src/myCompilerBaseListener.*
+src/myCompilerVisitor.*
+src/myCompilerBaseVisitor.*
+src/*.tokens
+src/*.interp
+
+# OS & Editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+EOF
