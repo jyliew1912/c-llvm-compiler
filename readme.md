@@ -183,4 +183,3 @@ The integer result after the while loop is: 5
 
 <FollowUp label="Want to inspect the Image Recognition project repository next?" query="Let's proceed to the Image Recognition repository. Here is my current file structure and code."/>
 
-```
